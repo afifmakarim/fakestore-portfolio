@@ -25,7 +25,7 @@ export default function ShoppingCartSection() {
         <Breadcrumbs label="Cart" />
         <h4 className="text-2xl font-bold">Shopping Cart</h4>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
-          <table className="table-auto col-span-2">
+          <table className="table-auto col-span-1 md:col-span-2 ">
             <thead className="border-b">
               <tr>
                 <th className="font-bold py-4 px-4 pt-0 pb-3 text-slate-400 text-left">
