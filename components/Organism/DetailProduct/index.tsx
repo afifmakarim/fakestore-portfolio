@@ -53,7 +53,7 @@ export default function DetailProduct({ id, name, description, image, price }) {
                 </div>
               </div>
             </div>
-            <div className="w-full max-w-md px-2 pt-4 pb-8 sm:px-0 border-b-2">
+            <div className="w-full max-w-md px-2 pt-4 pb-8 text-black sm:px-0 border-b-2">
               <Tab.Group>
                 <Tab.List className="relative flex space-x-1 p-1 justify-start">
                   {Object.keys(categories).map((category) => (

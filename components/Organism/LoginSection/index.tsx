@@ -34,11 +34,10 @@ export default function LoginSection() {
   };
   return (
     <>
-      <div className="max-w-7xl mx-auto mb-5">
-        <h4 className="font-bold text-lg py-5 px-8 md:px-0">Customer Login</h4>
-
+      <div className="max-w-7xl mx-auto bg-white">
+        <h4 className="font-bold text-lg px-8 md:px-0">Customer Login</h4>
         <div className="flex gap-4 flex-col md:flex-row p-5 md:p-0">
-          <div className="max-w-7xl w-full bg-[#F5F9FF] px-5 py-8 flex flex-col">
+          <div className="max-w-7xl w-full bg-[#F5F9FF] px-5 py-8 flex flex-col text-black">
             <h4 className="text-sm font-bold">Registered Customers</h4>
             <p className="text-xs my-2">
               If you have an account, sign in with your email address.
@@ -51,7 +50,7 @@ export default function LoginSection() {
                 id="username"
                 type="text"
                 placeholder="Your Username"
-                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
@@ -63,7 +62,7 @@ export default function LoginSection() {
               <input
                 type="password"
                 placeholder="Your Password"
-                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -80,7 +79,7 @@ export default function LoginSection() {
             </div>
           </div>
 
-          <div className="max-w-7xl w-full bg-[#F5F9FF] px-5 py-8 flex flex-col">
+          <div className="max-w-7xl w-full bg-[#F5F9FF] px-5 py-8 flex flex-col text-black">
             <h4 className="text-sm font-bold">New Customer?</h4>
             <p className="text-xs my-2">
               Creating an account has many benefits:

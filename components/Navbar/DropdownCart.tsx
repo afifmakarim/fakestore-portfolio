@@ -63,7 +63,7 @@ export default function DropdownCart({
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="z-10 absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="z-10 absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 bg-white text-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="px-1 py-4">
             <div className="flex flex-col px-4">
               <h4 className="flex justify-center font-bold text-lg">My Cart</h4>

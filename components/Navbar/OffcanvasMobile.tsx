@@ -79,7 +79,7 @@ export default function OffcanvasMobile({ toggle, setToggle, navMenu }) {
                             <Link
                               key={idx}
                               href={item.href}
-                              className="py-4 text-base hover:text-slate-500 capitalize"
+                              className="py-4 text-base hover:text-gray-500 capitalize text-black"
                             >
                               {item.name}
                             </Link>

@@ -21,7 +21,7 @@ export default function ShoppingCartSection() {
   const tax = 1.91;
   return (
     <div className="mx-auto max-w-7xl">
-      <div className="flex flex-col gap-4 mt-4 px-4 md:px-0">
+      <div className="flex flex-col gap-4 mt-4 px-4 md:px-0 text-black">
         <Breadcrumbs label="Cart" />
         <h4 className="text-2xl font-bold">Shopping Cart</h4>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">

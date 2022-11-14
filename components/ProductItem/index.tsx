@@ -28,7 +28,7 @@ export default function ProductItem({
           <CheckCircleIcon className="h-5 w-5 inline-block" />
           <span className="font-bold">in stock</span>
         </h4>
-        <div className="flex flex-col justify-between h-full">
+        <div className="flex flex-col justify-between h-full text-black">
           <div className="flex flex-col gap-2">
             <Image
               src={image}
@@ -46,7 +46,7 @@ export default function ProductItem({
             </Link>
           </div>
           <div className="flex flex-col">
-            <h4 className="text-base font-bold my-2">${price}</h4>
+            <h4 className="text-base font-bold my-2 ">${price}</h4>
             <div className="opacity-0 font-semibold my-4 group-hover:opacity-100 transition-opacity duration-300 ease-in">
               <ButtonTheme
                 label={

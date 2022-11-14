@@ -16,9 +16,11 @@ export default function CartList({ name, image, price, qty }) {
   return (
     <>
       <tr className="border-b">
-        <td className="py-4 flex items-center gap-5 ">
-          <Image src={image} width={80} height={80} alt={name} />
-          <div>{name}</div>
+        <td className="py-4">
+          <div className="flex flex items-center gap-5">
+            <Image src={image} width={80} height={80} alt={name} />
+            <p>{name}</p>
+          </div>
         </td>
         <td className="py-4">{price}</td>
         <td className="py-4">

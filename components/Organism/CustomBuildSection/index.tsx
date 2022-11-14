@@ -54,7 +54,7 @@ export default function CustomBuildSection({ isMobile, categoryName }) {
               image={item.image}
               rating={item.rating.rate}
               reviewCount={item.rating.count}
-              price={`$${item.price}`}
+              price={`${item.price}`}
             />
           </SwiperSlide>
         ))}

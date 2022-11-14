@@ -3,12 +3,12 @@ import React from "react";
 
 export default function Breadcrumbs({ label }) {
   return (
-    <div className="flex items-center py-4 overflow-y-auto whitespace-nowrap p-5 md:p-0">
-      <Link href="/" className="text-gray-600 dark:text-gray-200">
+    <div className="flex items-center py-4 overflow-y-auto whitespace-nowrap p-5 md:p-0 ">
+      <Link href="/" className="text-gray-600">
         Home
       </Link>
 
-      <span className="mx-2 text-gray-500 dark:text-gray-300 rtl:-scale-x-100">
+      <span className="mx-2 text-gray-500 rtl:-scale-x-100">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-5 h-5"
@@ -23,7 +23,7 @@ export default function Breadcrumbs({ label }) {
         </svg>
       </span>
 
-      <a href="#" className="text-gray-600 dark:text-gray-200 hover:underline">
+      <a href="#" className="text-gray-600 hover:underline">
         {label}
       </a>
     </div>

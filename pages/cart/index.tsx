@@ -4,13 +4,20 @@ import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import ShoppingCartSection from "../../components/Organism/ShoppingCartSection";
 import jwtDecode from "jwt-decode";
+import dynamic from "next/dynamic";
+
+const ShoppingCartNoSSR = dynamic(
+  () => import("../../components/Organism/ShoppingCartSection"),
+  {
+    ssr: false,
+  }
+);
 
 export default function ShoppingCart({ user }) {
-  console.log("SSR : ", user);
   return (
     <>
       <Navbar />
-      <ShoppingCartSection />
+      <ShoppingCartNoSSR />
       <Featured />
       <Footer />
     </>

@@ -114,7 +114,7 @@ export default function Navbar() {
                 </span>
               </div>
               <input
-                className="block w-full rounded-full border-gray-300 pl-10 py-3 pr-6 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm "
+                className="block w-full rounded-full border-gray-300 pl-10 py-3 pr-6 bg-white text-black focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 placeholder="Search here"
                 value={searchBar}
                 onChange={(e) => setSearchBar(e.target.value)}
@@ -145,21 +145,40 @@ export default function Navbar() {
                 >
                   <Menu.Items className="z-10 absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="px-1 py-1 ">
-                      {profileMenu.map((item, idx) => (
-                        <Menu.Item key={idx}>
-                          {({ active }) => (
-                            <Link
-                              className={`${
-                                active
-                                  ? "bg-blueTheme text-white"
-                                  : "text-gray-900"
-                              } group flex w-full items-center px-2 py-2 text-sm`}
-                              href={item.href}
-                            >
-                              {item.name}
-                            </Link>
+                      {profileMenu.map((item: any, idx: any) => (
+                        <>
+                          {isLogin && idx === 3 ? (
+                            <Menu.Item key={idx}>
+                              {({ active }) => (
+                                <button
+                                  className={`${
+                                    active
+                                      ? "bg-blueTheme text-white"
+                                      : "text-gray-900"
+                                  } group flex w-full items-center px-2 py-2 text-sm`}
+                                  onClick={onLogout}
+                                >
+                                  Sign Out
+                                </button>
+                              )}
+                            </Menu.Item>
+                          ) : (
+                            <Menu.Item key={idx}>
+                              {({ active }) => (
+                                <Link
+                                  className={`${
+                                    active
+                                      ? "bg-blueTheme text-white"
+                                      : "text-gray-900"
+                                  } group flex w-full items-center px-2 py-2 text-sm`}
+                                  href={item.href}
+                                >
+                                  {item.name}
+                                </Link>
+                              )}
+                            </Menu.Item>
                           )}
-                        </Menu.Item>
+                        </>
                       ))}
                     </div>
                   </Menu.Items>
@@ -250,29 +269,41 @@ export default function Navbar() {
                   leaveTo="transform opacity-0 scale-95"
                 >
                   <Menu.Items className="z-10 absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    <div className="px-1 py-1 ">
-                      {profileMenu.map((item, idx) => (
-                        <Menu.Item key={idx}>
-                          {({ active }) => (
-                            <Link
-                              className={`${
-                                active
-                                  ? "bg-blueTheme text-white"
-                                  : "text-gray-900"
-                              } group flex w-full items-center px-2 py-2 text-sm`}
-                              href={item.href}
-                              onClick={
-                                isLogin && item.name === "Sign In"
-                                  ? onLogout
-                                  : () => console.log("test")
-                              }
-                            >
-                              {isLogin && item.name === "Sign In"
-                                ? "Sign Out"
-                                : item.name}
-                            </Link>
+                    <div className="px-1 py-1">
+                      {profileMenu.map((item: any, idx: any) => (
+                        <>
+                          {isLogin && idx === 3 ? (
+                            <Menu.Item key={idx}>
+                              {({ active }) => (
+                                <button
+                                  className={`${
+                                    active
+                                      ? "bg-blueTheme text-white"
+                                      : "text-gray-900"
+                                  } group flex w-full items-center px-2 py-2 text-sm`}
+                                  onClick={onLogout}
+                                >
+                                  Sign Out
+                                </button>
+                              )}
+                            </Menu.Item>
+                          ) : (
+                            <Menu.Item key={idx}>
+                              {({ active }) => (
+                                <Link
+                                  className={`${
+                                    active
+                                      ? "bg-blueTheme text-white"
+                                      : "text-gray-900"
+                                  } group flex w-full items-center px-2 py-2 text-sm`}
+                                  href={item.href}
+                                >
+                                  {item.name}
+                                </Link>
+                              )}
+                            </Menu.Item>
                           )}
-                        </Menu.Item>
+                        </>
                       ))}
                     </div>
                   </Menu.Items>
