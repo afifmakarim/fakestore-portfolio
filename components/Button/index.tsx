@@ -8,7 +8,7 @@ export default function ButtonTheme(props) {
       <>
         <button
           {...nativeProps}
-          className={`rounded-full border-2 border-blueTheme px-4 py-2 text-xs font-medium tracking-wide text-blueTheme capitalize transition-colors duration-300 transform bg-white hover:text-blue-800 hover:border-blue-800 ${
+          className={`rounded-full border-2 border-blueTheme px-4 py-2 text-xs tracking-wide text-blueTheme capitalize transition-colors duration-300 transform bg-white hover:text-blue-800 hover:border-blue-800 ${
             tailwindClass ? tailwindClass : ""
           }`}
         >

@@ -27,17 +27,11 @@ export default function ShoppingCartSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
           <table className="table-auto col-span-1 md:col-span-2 ">
             <thead className="border-b">
-              <tr>
-                <th className="font-bold py-4 pt-0 pb-3 text-slate-400 text-left">
-                  Items
-                </th>
-                <th className="font-bold py-4 pt-0 pb-3 text-slate-400 text-left">
-                  Price
-                </th>
-                <th className="font-bold py-4 pt-0 pb-3 text-slate-400 text-left">
-                  Qty
-                </th>
-                <th className="font-bold py-4 pt-0 pb-3 text-slate-400 text-left">
+              <tr className="">
+                <th className="text-sm font-medium text-gray-700 p-2">Items</th>
+                <th className="text-sm font-medium text-gray-700 p-2">Price</th>
+                <th className="text-sm font-medium text-gray-700 p-2">Qty</th>
+                <th className="text-sm font-medium text-gray-700 p-2">
                   Subtotal
                 </th>
               </tr>
